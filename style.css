@@ -34,6 +34,7 @@ h2{
 
 
 .glow-on-hover {
+	margin-top: 50px;
 	width: 150px;
 	height: 40px;
 	border: none;
@@ -262,5 +263,97 @@ h2{
 	to {
 		height: 540px;
 	}
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+footer{
+	position: absolute;
+	bottom: 0;
+	left: 0  ; 
+	right: 0 ;
+	background-color: #000;
+	height: auto;
+	width: 100vw;
+	/* padding-top: 40px; */
+
+	 
+}
+
+.footer-content{
+	  display: flex;
+	  align-items: center;
+	  justify-content: center ; 
+	  flex-direction: column;
+	  text-align: center ;
+	  
+}
+
+.social{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin:  1rem 0 1rem 0;
+
+	 
+}
+
+.social li{
+	margin: 0 30px;
+}
+
+.social a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.social a i{
+	transition: color .4s ease;
+}
+
+.social a:hover i{
+	color: aqua;
+}
+
+.text{
+	margin-top: 100px;
+	padding-bottom: 60px ;
+}
+
+@media screen and (max-width: 600px) {
+	 
+	footer{
+		position: relative;
+		bottom: -50vh;
+		margin-top: 20px;
+
+
+	}
+
+#layer-0{
+	height: 0.01vh;
+}
+#layer-1{
+	height: 0vh;
+	display: none;
+}
+#layer-2{
+	height: 0vh;
+	display: none;
+}
+h1{
+	font-size: 120%;
+}
+h2{
+	font-size: 60%;
+}
+
+
 }
 
