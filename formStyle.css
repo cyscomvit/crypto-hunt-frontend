@@ -16,8 +16,6 @@
     flex-wrap: wrap;
 }
 
-
-/* Background */
 section {
     width: 100vw;
     height: 100vh;
@@ -65,8 +63,6 @@ section span:hover {
     transition: 0s;
 }
 
-
-/* Main content */
 .logo {
     position: absolute;
     top: -0.8rem;
@@ -76,18 +72,17 @@ section span:hover {
     z-index: 2;
 }
 
-.text {
+.form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
     top: 0.2rem;
-    /* left: 28rem; */
     color: white;
     background-color: black;
-    width: 48rem;
-    height: 19rem;
+    width: 38rem;
+    height: 38rem;
     z-index: 1;
     overflow: hidden;
     box-shadow: inset -5px -5px rgba(0, 0, 0, 0.5);
@@ -96,45 +91,34 @@ section span:hover {
     backdrop-filter: blur(5px);
 }
 
-/* Hover effect background */
-.text::before{
-	content: '';
-	position: absolute;
-	top: -2px;
-	left: -2px;
-	right: -2px;
-	bottom: -2px;
-	z-index: -1;
+.form:hover{
+    border: 5px solid #0151b9;
+    transition: border 0.1s ease-in-out;
 }
-.text::after{
-	content: '';
-	position: absolute;
-	top: -2px;
-	left: -2px;
-	right: -2px;
-	bottom: -2px;
-	z-index: -2;
-	filter: blur(40px);
-}
+.form-input {
+    margin: 1rem 1rem;
+    padding: 0.8rem;
+    outline: none;
+    border-radius: 10px;
+    width: 30rem;
+  }
 
-.text:hover:before,
-.text:hover:after{
-    background: linear-gradient(235deg, #772aff, #010615, #2196F3);
-}
+  .form-title {
+    padding: 20px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+  }
 
 
-/* InnerText */
-h1 {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 4rem;
-}
+  @media screen and (max-width:700px) {
+    .form-title {
+      font-size: 0.7rem;
+    }
+  }
 
-h2 {
-    font-family: 'Jost', sans-serif;
-    font-size: 2rem;
-}
-
-.btn {
+  .btn {
     text-align: center;
 }
 
@@ -212,47 +196,4 @@ h2 {
     100% {
         background-position: 0 0;
     }
-}
-
-
-/* Footer */
-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #000;
-    z-index: 2;
-}
-
-.footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.social {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1.6rem 0;
-}
-
-.social li {
-    margin: 0 30px;
-}
-
-.social a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.social a i {
-    transition: color .4s ease;
-}
-
-.social a:hover i {
-    color: rgb(74, 96, 255);
 }
