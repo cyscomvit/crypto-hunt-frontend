@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="shortcut icon" href="https://pbs.twimg.com/profile_images/1543483472412811264/ViWhC4Yb_400x400.jpg" type="image/x-icon" />
+    <style>
+        .main-container{
+    margin: auto;
+    height: 86vh;
+    width: 39vw;
+    margin-top: 20px;
+    left: 20%;
+    
+}
+
+
+body {
+	background: radial-gradient(ellipse at center, rgba(127,0,173,0.6) 0%,
+  rgba(0,0,0,0.8) 60%, 
+  rgba(0,0,0,1) 90%), 
+  url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/31787/stars.jpg);
+	background-size: cover;
+	z-index:-5;
+	color: white;
+	overflow: hidden;
+	font-family: 'Monoton', monospace;
+	font-size: 2em;
+	overflow-y: scroll;
+}
+html::-webkit-scrollbar {
+	width: 0.5rem;
+  }
+  
+  html::-webkit-scrollbar-track {
+	background: #ffffff;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+	background: rgba(127,0,173,0.6);
+	border-radius: 5rem;
+ }
+
+h1 {
+	animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF11A7, 0 0 70px #FF11A7, 0 0 80px #FF11A7, 0 0 100px #FF11A7, 0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF11A7, 0 0 35px #FF11A7, 0 0 40px #FF11A7, 0 0 50px #FF11A7, 0 0 75px #FF11A7;
+  }
+}
+
+
+.logo{
+    
+    padding-left: 1%;
+    width: 101px;
+    height: 83px;
+}
+
+.container-1{
+    border-radius: 20px;
+    background-color: #000f39;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form-input{
+margin: 15px 20px;
+padding: 10px;
+outline: none;
+border-radius: 10px;
+
+}
+
+.form-title{
+    padding: 20px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+
+
+
+.glow-on-hover {
+	width: 150px;
+	height: 40px;
+	border: none;
+	outline: none;
+	color: rgb(255, 255, 255);
+	background: rgb(23, 44, 120);
+	cursor: pointer;
+	position: relative;
+	z-index: 0;
+	border-radius: 5px;
+	font-size: medium;
+	font-family: 'Exo', sans-serif;
+  margin: 10px auto;
+  padding: 10px 20px;
+
+  }
+  .glow-on-hover:hover{
+	font-size: large;
+	color: #00ffd5;
+  }
+  
+  .glow-on-hover:before {
+	content: '';
+	background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+	position: absolute;
+	top: -2px;
+	left:-2px;
+	background-size: 400%;
+	z-index: -1;
+	filter: blur(5px);
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	animation: glowing 20s linear infinite;
+	opacity: 0;
+	transition: opacity .3s ease-in-out;
+	border-radius: 10px;
+  }
+  
+  .glow-on-hover:active {
+	color: #000
+  }
+  
+  .glow-on-hover:active:after {
+	background: transparent;
+  }
+  
+  .glow-on-hover:hover:before {
+	opacity: 1;
+  }
+  
+  .glow-on-hover:after {
+	z-index: -1;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgb(23, 44, 120);
+	left: 0;
+	top: 0;
+	border-radius: 15px;
+  }
+  
+  @keyframes glowing {
+	0% { background-position: 0 0; }
+	50% { background-position: 400% 0; }
+	100% { background-position: 0 0; }
+  }
+  @media screen and (max-width:320px){
+    .form-title{
+        font-size: 0.7rem;
+    }
+    .glow-on-hover{
+      width: 103px;
+    }
+    .container-1{
+      width: 20rem;
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+      position: relative;
+      /* bottom: -80px; */
+    }
+    body{
+      display: inline-block;
+    }
+}
+    </style>
+  </head>
+  <body>
+    <div id="layer-0">
+	
+      <div id="layer-1">
+        <div id="layer-2">
+          <div id="lines">
+            <div id="layer-corner"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <img src="https://cyscomvit.com/assets/images/logo.png" class="logo" />
+    <div class="main-container">
+      <div class="container-1">
+        <h1 class="form-title">CYBER ODYSSEY</h1>
+        <input class="form-input" type="text" placeholder="Full Name*" required />
+        <input
+          class="form-input"
+          type="text"
+          placeholder="Registration number*"
+        />
+        <input class="form-input" type="email" placeholder="Your Email*" required/>
+        <input
+          class="form-input"
+          type="tel"
+          placeholder="Enter your Phone Number*" required
+        />
+        <input
+          class="form-input"
+          type="number"
+          placeholder="Payment Receipt Number*"required
+        ></input>
+        <button type="submit" class="glow-on-hover">Submit</button>
+      </div>
+      <div id="mtnZZZ"></div>
+    </div>
+    <script></script>
+  </body>
+</html>
